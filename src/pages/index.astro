@@ -1,16 +1,203 @@
 ---
-
+//import image from '../../public/img/nav.png';
 ---
 
 <html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
+  <head>
+    <title>Shop</title>
+    <meta
+      name="description"
+      content="Our webshop supports both people and the environment. Let's create a positive impact on our environment and society."
+    />
+  </head>
+
+  <nav class="image">
+    <img
+      src="../../public/img/nav.png"
+      alt="navbar picture"
+      width="100%"
+      height="auto"
+    />
+  </nav>
+
+  <main data-speed="0.5">
+    <div class="gif-container">
+      <video
+        data-speed="0.5"
+        src="../../public/animation/walk.mp4"
+        width="100%"
+        height="auto"
+        autoplay
+        loop
+      >
+      </video>
+    </div>
+
+    <div class="pink-box">
+      <h2>Mød kvinderne bag i Tråd Med Verden</h2>
+      <p>
+        Når du støtter I Tråd Med Verden, er du med til at skabe en positiv
+        forandring både for vores samfund og vores miljø. Vi er forpligtede til
+        at skabe en verden, der er mere inkluderende og bæredygtig. Gennem vores
+        fokus på sociale arbejdspladser og genbrug af materialer skaber vi
+        meningsfulde jobmuligheder for kvinder i sårbare situationer og
+        reducerer samtidig vores klimamæssige fodaftryk. Lad os sammen gå hånd i
+        hånd mod en fremtid, der omfavner bæredygtighed og inklusion.
+      </p>
+    </div>
+
+    <div class="video-container">
+      <iframe
+        width="100%"
+        height="600"
+        src="../../public/animation/itmv.mp4"
+        title="YouTube video player"
+        allowfullscreen></iframe>
+    </div>
+
+    <div class="pink-banner">
+      HVAD FÅR VORES PRAKTIKANTER UD AF ET FORLØB HOS ITMV?
+    </div>
+  </main>
+  <div class="gif-container2">
+    <img src="../../public/animation/leftsideani.gif" alt="Gif 1" />
+
+    <img src="../../public/animation/rightsideani.gif" alt="Gif 2" />
+  </div>
+  <div class="pink-banner">
+    <p>
+      I 2023 var <b>100%</b> af vores pratikanter meget tilfredse med deres
+      forløb.
+    </p>
+    <p>
+      <b>85%</b> mente, at de har lært noget nyt inden for håndarbejde og
+      syning.
+    </p>
+    <p><b>62%</b> havde glæde af at få en struktureret hverdag.</p>
+    <p>
+      <b>54%</b> opleve en forbedring i deres tilstand i løbet af pratikken.
+    </p>
+    <p>
+      <b>46%</b>nød af møde nye mennesker og være en del af et arbjdsfællesskab.
+    </p>
+    <p>
+      <b>46%</b>fik mod på at forsætte i en anden pratik eller et andet arbjde
+      efter pratikforløbet.
+    </p>
+    <p><b>38%</b>blev bedre til at være sammen med andre mennesker.</p>
+    <p><b>31%</b>troede mere på sig selv og deres evner</p>
+  </div>
+  <div class="pink-box">
+    <h1>Sammen kan vi gøre en forskel</h1>
+  </div>
+  <div class="button-container">
+    <button>DONÉR</button>
+
+    <button>SHOP</button>
+  </div>
+
+  <footer>
+    <nav class="image">
+      <img
+        src="../../public/img/footer.png"
+        alt="navbar picture"
+        width="100%"
+        height="auto"
+      />
+    </nav>
+  </footer>
+
+  <style>
+    @font-face {
+      font-family: "nunito";
+
+      src: url(../../public/font/nunito-extrabold-webfont.woff);
+    }
+    main {
+      perspective: 1px;
+      height: 100vh;
+      overflow-y: scroll;
+      /* font-family: "nunito"; */
+    }
+    h2,
+    h3,
+    p {
+      font-family: "nunito" "sans-serif";
+    }
+    h1 {
+      text-align: center;
+    }
+
+    .gif-container {
+      width: 100%;
+      height: auto;
+      margin: 0;
+      /* padding: 2rem 0; */
+    }
+    .gif-container2 {
+      display: flex;
+      justify-content: space-around;
+    }
+
+    .gif-container2 img {
+      width: 70%;
+      height: auto;
+      position: sticky;
+    }
+
+    .pink-box {
+      width: 100%;
+      margin: 0;
+      padding: 4rem;
+      text-align: left;
+    }
+
+    .video-container {
+      width: 100%;
+      height: auto;
+
+      /* padding: 2rem 0; */
+    }
+
+    .pink-banner {
+      width: 100%;
+      margin: 0;
+      padding: 4rem;
+      background-color: #f1e0dd;
+      text-align: center;
+    }
+    button {
+      padding: 1rem 2rem;
+      margin: 5rem;
+      min-width: 100px;
+      max-width: 200px;
+      height: 50px;
+      border: none;
+      border-radius: 0.25rem;
+      background-color: #3e5c6d;
+      color: #ffffff;
+      font-size: 1rem;
+      cursor: pointer;
+      flex: 1;
+      text-align: center;
+      flex-grow: 0;
+      flex-shrink: 0;
+    }
+    .button-container {
+      display: flex;
+      justify-content: center;
+      margin: 0 auto;
+      width: auto;
+      gap: 20px;
+    }
+
+    /* .video-container > video[data-speed] {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%) scale(1.5);
+    } */
+  </style>
+
+
 </html>
